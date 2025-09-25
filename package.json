@@ -1,0 +1,26 @@
+{
+  "name": "mised-support-ts",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts",
+    "deploy:commands": "ts-node --esm scripts/deploy-commands.ts"
+  },
+  "dependencies": {
+    "discord.js": "^14.15.3",
+    "dotenv": "^16.4.5",
+    "mongodb": "^6.8.0",
+    "mysql2": "^3.9.7"
+  },
+  "devDependencies": {
+    "@types/mongodb": "^4.0.6",
+    "@types/node": "^20.12.12",
+    "ts-node": "^10.9.2",
+    "tslib": "^2.6.2",
+    "tsx": "^4.17.0",
+    "typescript": "^5.5.4"
+  }
+}
