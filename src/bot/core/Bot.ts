@@ -13,6 +13,7 @@ import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 
 
+
 export interface SlashCommand {
   data: RESTPostAPIChatInputApplicationCommandsJSONBody;
   execute: (ctx: { client: MisedBot; interaction: any }) => Promise<void>;
@@ -34,7 +35,9 @@ export class MisedBot extends Client {
         GatewayIntentBits.DirectMessageReactions,
         GatewayIntentBits.AutoModerationExecution,
         GatewayIntentBits.DirectMessageTyping,
-        GatewayIntentBits.DirectMessages
+        GatewayIntentBits.DirectMessages,
+        GatewayIntentBits.GuildIntegrations,
+        GatewayIntentBits.GuildInvites
       ],
       partials: [Partials.Channel],
     });

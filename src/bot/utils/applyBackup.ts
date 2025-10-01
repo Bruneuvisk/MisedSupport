@@ -3,7 +3,7 @@ import {
 } from "discord.js";
 import {
   GuildSnapshot, AnyChannelSnapshot, CategorySnapshot, RoleSnapshot
-} from "../../types";
+} from "../../types.js";
 
 /**
  * Aplica um snapshot no servidor de destino.

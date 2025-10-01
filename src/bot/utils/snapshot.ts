@@ -4,7 +4,7 @@ import {
 import {
   GuildSnapshot, RoleSnapshot, CategorySnapshot,
   AnyChannelSnapshot, TextChannelSnapshot, VoiceChannelSnapshot
-} from "../../types";
+} from "../../types.js";
 
 /**
  * Cria um snapshot completo e ordenado do servidor:
